@@ -25,7 +25,7 @@ All commands assume that this folder is your working directory. The `server.port
 
 Open two terminal windows, one to run the welcome service and one to run the cloud service.
 
-Welcome: Start the service on port 8080
+Welcome: Start the service on port 80
 
 To run the service without OTEL instrumentation:
 ```
@@ -58,6 +58,8 @@ export OTEL_SERVICE_NAME=springboot-cloud
 export OTEL_EXPORTER_OTLP_TRACES_HEADERS="Authorization=Bearer 160639:eyJrIjoiYjkzMDA1NDE0ODRhYWRjYzgwNjg0YTJlNzcyZmY0MThmMDNiOTRjMiIsIm4iOiJ0ZXN0IiwiaWQiOjYwMTM4MH0="
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--server.port=9090"
 ```
+Once both services are started, you can access the service from [http://locahost/welcome](http://localhost/welcome)
+
 
 ## Run as Fargate tasks
 
