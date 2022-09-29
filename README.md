@@ -63,4 +63,6 @@ Once both services are started, you can access the service from [http://locahost
 
 ## Run as Fargate tasks
 
-When running as Fargate tasks, the cloud.url will be configured as container environment variable via teh Parameter Store.
+When running as Fargate tasks, the `cloud.url` will be configured as container environment variable via teh Parameter Store.
+
+See this [blog](https://betterprogramming.pub/how-to-host-a-serverless-springboot-web-application-using-aws-fargate-a3669d9eebd5) for details of creating Fargate tasks, and this [blog](https://medium.com/@giritech7/aws-set-environment-variable-for-ecs-tasks-a7ea3bf1d56f) or this [doc](https://docs.google.com/document/d/1iEwC_d6L80SzGQ4a8hakOTii9n2EeceR8OV5W40wTCY/edit?usp=sharing) for details on setting environment variables. 
